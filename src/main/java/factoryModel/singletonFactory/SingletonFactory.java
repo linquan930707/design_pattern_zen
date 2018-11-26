@@ -8,7 +8,7 @@ public   class  SingletonFactory {
     static {
         Class c = Singleton.class;
         try {
-            //获取无参构造
+            //获取无参构造 反射
             Constructor constructor = c.getDeclaredConstructor();
             //设置无参构造可访问
             constructor.setAccessible(Boolean.TRUE);
